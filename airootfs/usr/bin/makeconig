@@ -1,0 +1,5 @@
+#! /bin/bash
+threads=$((1 + $(nproc)))
+sed -i s/\#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$threads\"/ /etc/makepkg.conf
+sed -i "s/xz -c -z -/xz --threads=$(nproc) -c -z -/" /etc/makepkg.conf
+rm /usr/bin/makeconig

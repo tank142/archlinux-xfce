@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Об Xfce
+NoDisplay=true
+Comment=Сведения об ок
+Icon=help-about
+OnlyShowIn=XFCE;
+Exec=xfce4-about
+Actions=
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
