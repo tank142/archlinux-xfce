@@ -1,0 +1,40 @@
+[settings]
+columns = ~basename,album,~#length
+	
+
+[memory]
+browser = FileSystem
+column_expands = ~basename,1,album,1
+	
+column_widths = ~basename,-1,album,-1
+	
+open_browsers = 
+queue_expanded = False
+quodlibet_last_active_version = 4.0.2
+quodlibet_maximized = 0
+quodlibet_position = 658 273
+quodlibet_size_ = 600 480
+seek = 0
+sidebar_pos = 0.25
+song = 
+sortby = 
+	
+
+[player]
+replaygain_mode = auto
+
+[browsers]
+filesystem_pos = 0.555
+pane_selection = 0	.
+	0	.
+panedbrowser_pane_widths = 0.5
+	
+panedbrowser_pos = 0.40129449838187703
+query_text = 
+
+[plugins]
+active_plugins = 
+
+[__config__]
+version = 0
+
