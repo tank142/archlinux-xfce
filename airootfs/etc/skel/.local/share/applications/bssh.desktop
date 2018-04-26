@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.1
-Type=Application
-Name=Навигатор Avahi по серверам SSH
-Comment=Просмотр списка се
-Icon=network-wired
-Exec=/usr/bin/bssh
-Actions=
-Categories=GNOME;System;
