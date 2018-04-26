@@ -76,3 +76,8 @@ echo '[Icon Theme]
 Name=Default
 Comment=Default Cursor Theme
 Inherits=Oxygen_Black' > /etc/skel/.icons/default/index.theme
+
+wget https://raw.github.com/tank142/repo/master/tank.gpg -P /tmp/
+sudo pacman-key --add /tmp/tank.gpg
+sudo pacman-key --lsign-key 0FE04E8C39E79FB0
+rm /tmp/tank.gpg

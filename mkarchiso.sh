@@ -19,7 +19,7 @@ out_dir="out"
 sfs_mode="sfs"
 sfs_comp="xz"
 gpg_key=
-basepkg="bash bzip2 coreutils cryptsetup device-mapper diffutils e2fsprogs file filesystem findutils gawk gcc-libs gettext glibc grep gzip inetutils iproute2 iputils jfsutils less licenses linux-lts linux-lts-headers logrotate lvm2 man-db man-pages mdadm nano netctl pacman pciutils pcmciautils perl procps-ng psmisc reiserfsprogs s-nail sed shadow sysfsutils systemd-sysvcompat tar texinfo usbutils util-linux vi which xfsprogs"
+basepkg="bash bzip2 coreutils cryptsetup device-mapper diffutils e2fsprogs file filesystem findutils gawk gcc-libs gettext glibc grep gzip inetutils iproute2 iputils jfsutils less licenses linux-lts linux-lts-headers logrotate lvm2 man-db man-pages mdadm nano netctl pacman pciutils pcmciautils perl procps-ng psmisc reiserfsprogs s-nail sed shadow sysfsutils systemd-sysvcompat tar texinfo usbutils util-linux which xfsprogs"
 #dhcpcd
 # Show an INFO message
 # $1: message string

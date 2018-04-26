@@ -17,10 +17,11 @@
         <value type="int" value="4"/>
         <value type="int" value="3"/>
         <value type="int" value="15"/>
+        <value type="int" value="8"/>
         <value type="int" value="6"/>
         <value type="int" value="16"/>
         <value type="int" value="5"/>
-	<value type="int" value="7"/>
+        <value type="int" value="7"/>
       </property>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-color" type="array">
@@ -49,6 +50,7 @@
         <value type="string" value="deadbeef"/>
         <value type="string" value="апплет networkmanager"/>
         <value type="string" value="pamac-tray"/>
+        <value type="string" value="thunar"/>
         <value type="string" value="pidgin"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
@@ -80,6 +82,6 @@
       </property>
     </property>
     <property name="plugin-7" type="string" value="alsa"/>
-    <property name="plugin-8" type="string" value="systemload"/>
+    <property name="plugin-8" type="string" value="multiload-ng-xfce4"/>
   </property>
 </channel>

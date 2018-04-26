@@ -89,6 +89,7 @@ xfce4-mpc-plugin
 xfce4-clipman-plugin
 xfce4-xkb-plugin
 xfce4-alsa-plugin
+xfce4-multiload-ng-plugin-gtk2
 xfconf
 xfdesktop
 xfsprogs
@@ -105,6 +106,7 @@ ttf-droid
 light-locker
 pamac-aur
 #xterm
+seahorse
 gnome-keyring
 engrampa
 p7zip
