@@ -1,23 +1,37 @@
 <?xml encoding="UTF-8" version="1.0"?>
 <actions>
 <action>
-	<icon>utilities-terminal</icon>
-	<name>Открыть терминал</name>
-	<unique-id>1521742566455189-1</unique-id>
-	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Пример особого действия</description>
+	<icon>emblem-ubuntuone-updating</icon>
+	<name>Поиск</name>
+	<unique-id>1525726772802482-6</unique-id>
+	<command>catfish --path=%D</command>
+	<description></description>
+	<upper>-1</upper>
+	<lower>-1</lower>
 	<patterns>*</patterns>
-	<startup-notify/>
 	<directories/>
 </action>
 <action>
-	<icon>emblem-ubuntuone-updating</icon>
-	<name>Поиск</name>
-	<unique-id>1523129280481024-6</unique-id>
-	<command>catfish --path=%d</command>
+	<icon>utilities-terminal</icon>
+	<name>Открыть терминал</name>
+	<unique-id>1525727437746085-6</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description></description>
+	<upper>-1</upper>
+	<lower>-1</lower>
 	<patterns>*</patterns>
-	<startup-notify/>
 	<directories/>
+</action>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Открыть в терминале</name>
+	<unique-id>1525727709076231-12</unique-id>
+	<command>exo-open --working-directory %d --launch TerminalEmulator %f</command>
+	<description></description>
+	<upper>-1</upper>
+	<lower>-1</lower>
+	<patterns>*.sh</patterns>
+	<other-files/>
+	<text-files/>
 </action>
 </actions>

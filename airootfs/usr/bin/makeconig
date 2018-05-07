@@ -6,5 +6,6 @@ sed -i "s/-march=x86-64/-march=native/" /etc/makepkg.conf
 sed -i "s/-mtune=generic/-mtune=native/" /etc/makepkg.conf
 rm /root/.bashrc
 echo 'alias ls="ls --color=auto"
+complete -cf sudo
 PS1="\[\e[01;31m\]\u \[\e[00m\]\\w \$ "' > /root/.bashrc
 rm /usr/bin/makeconig
