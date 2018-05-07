@@ -11,7 +11,7 @@ locale-gen
 ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 hwclock --systohc --utc
 
-usermod -s /usr/bin/bash root
+usermod -s /bin/bash root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
 
@@ -22,6 +22,7 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
+find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; >> /etc/nanorc
 
 #systemctl enable pacman-init.service choose-mirror.service
 pacman-key --init
@@ -55,8 +56,6 @@ groupadd -r autologin
 groupadd -r nopasswdlogin
 id -u $USER &>/dev/null || useradd -m $USER -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,autologin,nopasswdlogin,power,wheel" -s /bin/bash
 passwd -d $USER
-echo "user ALL=(ALL) ALL" >> /etc/sudoers
-echo 'Live User Created'
 
 mv /root/mirrorlist /etc/pacman.d/mirrorlist
 mv /root/xfce4.tar /home/$USER/

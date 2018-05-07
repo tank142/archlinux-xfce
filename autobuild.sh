@@ -6,7 +6,7 @@ USER="tank"
 iso_name=archlinux
 iso_de=Xfce4
 
-chmod +x ./autobuild.sh ./build.sh ./mkarchiso airootfs/root/customize_airootfs.sh
+chmod +x ./autobuild.sh ./build.sh ./mkarchiso.sh airootfs/root/customize_airootfs.sh
 chmod -R +755  ./
 rm -r ./work ./out
 
