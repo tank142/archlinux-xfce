@@ -69,7 +69,8 @@ alacarte-xfce
 engrampa-thunar
 catfish
 tumbler
-ristretto
+#ristretto
+gpicview
 xfce4-lxsession-logout
 xfce4-sensors-plugin
 xfce4-taskmanager
