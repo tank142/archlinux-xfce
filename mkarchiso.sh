@@ -19,8 +19,7 @@ out_dir="out"
 sfs_mode="sfs"
 sfs_comp="xz"
 gpg_key=
-basepkg="bash bzip2 coreutils cryptsetup device-mapper diffutils e2fsprogs file filesystem findutils gawk gcc-libs gettext glibc grep gzip inetutils iproute2 iputils jfsutils less licenses linux-lts linux-lts-headers logrotate lvm2 man-db man-pages mdadm nano netctl pacman pciutils pcmciautils perl procps-ng psmisc reiserfsprogs s-nail sed shadow sysfsutils systemd-sysvcompat tar texinfo usbutils util-linux which xfsprogs"
-#dhcpcd
+
 # Show an INFO message
 # $1: message string
 _msg_info() {
@@ -44,7 +43,8 @@ _msg_error() {
 
 _chroot_init() {
     mkdir -p ${work_dir}/airootfs
-    _pacman "$basepkg syslinux"
+    base=`pacman -Sg base | sed 's/base//' | sed 's/linux//' | sed 's/-firmware//' | sed 's/util-//' | sed 's/dhcpcd//' | sed 's/xfsprogs//' | sed 's/vi //' | tr -d '\r\n'`
+    _pacman "linux-lts linux-lts-headers $base syslinux grub"
 }
 
 _chroot_run() {
@@ -155,9 +155,9 @@ _pacman ()
     _msg_info "Installing packages to '${work_dir}/airootfs/'..."
 
     if [[ "${quiet}" = "y" ]]; then
-        pacstrap -C "${pacman_conf}" -c -d -G -M "${work_dir}/airootfs" $* &> /dev/null
+        pacstrap -C "${pacman_conf}" -c -G -M "${work_dir}/airootfs" $* &> /dev/null
     else
-        pacstrap -C "${pacman_conf}" -c -d -G -M "${work_dir}/airootfs" $*
+        pacstrap -C "${pacman_conf}" -c -G -M "${work_dir}/airootfs" $*
     fi
 
     _msg_info "Packages installed successfully!"
@@ -212,7 +212,7 @@ _mkairootfs_img () {
     if [[ ${quiet} == "y" ]]; then
         _qflag="-q"
     fi
-    mkfs.btrfs ${_qflag} -F "${work_dir}/airootfs.img"
+    mkfs.ext4 ${_qflag} -O ^has_journal,^resize_inode -E lazy_itable_init=0 -m 0 -F "${work_dir}/airootfs.img"
     tune2fs -c 0 -i 0 "${work_dir}/airootfs.img" &> /dev/null
     _msg_info "Done!"
     _mount_airootfs
@@ -267,8 +267,7 @@ command_pkglist () {
     _show_config pkglist
 
     _msg_info "Creating a list of installed packages on live-enviroment..."
-    pacman -Sl -r "${work_dir}/airootfs" --config "${pacman_conf}" | \
-        awk '/\[installed\]$/ {print $1 "/" $2 "-" $3}' > \
+    pacman -Q --sysroot "${work_dir}/airootfs" > \
         "${work_dir}/iso/${install_dir}/pkglist.${arch}.txt"
     _msg_info "Done!"
 
@@ -367,6 +366,8 @@ command_run() {
 if [[ ${EUID} -ne 0 ]]; then
     _msg_error "This script must be run as root." 1
 fi
+
+umask 0022
 
 while getopts 'p:r:C:L:P:A:D:w:o:s:c:g:vh' arg; do
     case "${arg}" in

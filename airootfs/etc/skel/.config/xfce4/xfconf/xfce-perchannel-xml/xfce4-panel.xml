@@ -44,7 +44,10 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-4" type="string" value="pager"/>
-    <property name="plugin-5" type="string" value="clock"/>
+    <property name="plugin-5" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+      <property name="digital-format" type="string" value="%l:%m"/>
+    </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="deadbeef"/>

@@ -31,31 +31,55 @@
 	</Layout>
 	<Menu>
 		<Name>System</Name>
+		<Exclude>
+			<Filename>playonlinux.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/liveuser/.local/share/applications</AppDir>
+		<Exclude>
+			<Filename>avahi-discover.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>bvnc.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>bssh.desktop</Filename>
+		</Exclude>
+		<Include>
+			<Filename>pamac-installer.desktop</Filename>
+		</Include>
+		<Exclude>
+			<Filename>Thunar.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>Thunar-bulk-rename.desktop</Filename>
+		</Exclude>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>org.gnome.DiskUtility.desktop</Filename>
 			<Filename>gparted.desktop</Filename>
 			<Separator/>
-			<Filename>xfce4-session-logout.desktop</Filename>
 			<Filename>xfce4-taskmanager.desktop</Filename>
-			<Filename>Thunar-bulk-rename.desktop</Filename>
-			<Filename>bssh.desktop</Filename>
-			<Filename>bvnc.desktop</Filename>
-			<Filename>avahi-discover.desktop</Filename>
-			<Filename>pamac-updater.desktop</Filename>
-			<Filename>Thunar-folder-handler.desktop</Filename>
+			<Filename>hardinfo.desktop</Filename>
 			<Filename>xfce4-sensors.desktop</Filename>
+			<Separator/>
 			<Filename>xfce4-terminal.desktop</Filename>
+			<Separator/>
+			<Filename>pamac-updater.desktop</Filename>
 			<Filename>pamac-manager.desktop</Filename>
 			<Filename>pamac-installer.desktop</Filename>
 			<Filename>calamares.desktop</Filename>
+			<Filename>bssh.desktop</Filename>
+			<Filename>bvnc.desktop</Filename>
+			<Filename>avahi-discover.desktop</Filename>
+			<Filename>xfce4-session-logout.desktop</Filename>
+			<Filename>Thunar-bulk-rename.desktop</Filename>
+			<Filename>Thunar-folder-handler.desktop</Filename>
 			<Filename>Thunar.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 		<Exclude>
-			<Filename>playonlinux.desktop</Filename>
+			<Filename>pamac-updater.desktop</Filename>
 		</Exclude>
-		<AppDir>/home/liveuser/.local/share/applications</AppDir>
 	</Menu>
 	<Menu>
 		<Name>Accessories</Name>
@@ -66,5 +90,37 @@
 		<Exclude>
 			<Filename>xfce4-sensors.desktop</Filename>
 		</Exclude>
+		<Exclude>
+			<Filename>compton.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>xfce4-taskmanager.desktop</Filename>
+		</Exclude>
+	</Menu>
+	<Menu>
+		<Name>Multimedia</Name>
+		<Exclude>
+			<Filename>qvidcap.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/tank/.local/share/applications</AppDir>
+	</Menu>
+	<Menu>
+		<Name>Settings</Name>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>xfce-settings-manager.desktop</Filename>
+			<Separator/>
+			<Filename>alacarte-made-2.desktop</Filename>
+			<Filename>alacarte-made-1.desktop</Filename>
+			<Separator/>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Graphics</Name>
+		<Exclude>
+			<Filename>gpicview.desktop</Filename>
+		</Exclude>
+		<AppDir>/home/tank/.local/share/applications</AppDir>
 	</Menu>
 </Menu>

@@ -4,18 +4,17 @@
 
 USER="tank"
 iso_name=archlinux
-iso_de=Xfce4
 
 chmod +x ./autobuild.sh ./build.sh ./mkarchiso.sh airootfs/root/customize_airootfs.sh
 chmod -R +755  ./
-rm -r ./work ./out
+rm -rf ./work ./out
 
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root" 
    exit 1
 fi
 
-ISO="${iso_name}-${iso_version}-${iso_de}.iso"
+ISO="${iso_name}-$iso_de${iso_version}.iso"
 
 #Build ISO File
 package=archiso
@@ -29,4 +28,3 @@ fi
 source build.sh -v
 
 chown $USER out/
-rm -r work

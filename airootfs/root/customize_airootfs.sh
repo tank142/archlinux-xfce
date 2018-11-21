@@ -29,10 +29,10 @@ pacman-key --init
 pacman-key --populate archlinux
 systemctl set-default multi-user.target
 systemctl enable NetworkManager.service
+systemctl enable ntpd.service
 #systemctl enable lightdm.service
 systemctl enable lxdm.service
 systemctl set-default graphical.target
-systemctl disable dhcpcd@
 #add missing /media directory
 mkdir -p /media
 chmod 755 -R /media

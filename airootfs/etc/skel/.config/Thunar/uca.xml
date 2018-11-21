@@ -3,8 +3,8 @@
 <action>
 	<icon>emblem-ubuntuone-updating</icon>
 	<name>Поиск</name>
-	<unique-id>1525726772802482-6</unique-id>
-	<command>catfish --path=%D</command>
+	<unique-id>1536245936067371-1</unique-id>
+	<command>catfish --path=%f</command>
 	<description></description>
 	<upper>-1</upper>
 	<lower>-1</lower>
@@ -25,8 +25,8 @@
 <action>
 	<icon>utilities-terminal</icon>
 	<name>Открыть в терминале</name>
-	<unique-id>1525727709076231-12</unique-id>
-	<command>exo-open --working-directory %d --launch TerminalEmulator %f</command>
+	<unique-id>1537014149572269-13</unique-id>
+	<command>exo-open  --working-directory %d --launch TerminalEmulator &quot;%f&quot;</command>
 	<description></description>
 	<upper>-1</upper>
 	<lower>-1</lower>

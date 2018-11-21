@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=
+Terminal=true
+Name=Alsaequal
+Name[ru]=Эквалайзер
+Exec=alsamixer -D equal
+Type=Application
+Icon=qv4l2
+Categories=Settings;

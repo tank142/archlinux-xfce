@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=
+Terminal=true
+Name=Alsamixer
+Name[ru]=Микшер
+Exec=alsamixer
+Type=Application
+Icon=qv4l2
+Categories=Settings;
