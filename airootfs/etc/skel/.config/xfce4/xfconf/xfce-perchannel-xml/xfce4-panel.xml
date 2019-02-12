@@ -25,12 +25,12 @@
       </property>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-color" type="array">
-        <value type="uint" value="9830"/>
-        <value type="uint" value="9830"/>
-        <value type="uint" value="9830"/>
+        <value type="uint" value="0"/>
+        <value type="uint" value="0"/>
+        <value type="uint" value="0"/>
         <value type="uint" value="65535"/>
       </property>
-      <property name="background-alpha" type="uint" value="70"/>
+      <property name="background-alpha" type="uint" value="50"/>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>

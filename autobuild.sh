@@ -28,3 +28,5 @@ fi
 source build.sh -v
 
 chown $USER out/
+
+#rm -rf work

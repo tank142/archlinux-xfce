@@ -4,4 +4,5 @@ sed -i s/\#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$threads\"/ /etc/makepkg.conf
 sed -i "s/xz -c -z -/xz --threads=$(nproc) -c -z -/" /etc/makepkg.conf
 sed -i "s/-march=x86-64/-march=native/" /etc/makepkg.conf
 sed -i "s/-mtune=generic/-mtune=native/" /etc/makepkg.conf
-rm /usr/bin/makeconig
+
+#rm /usr/bin/makeconfig

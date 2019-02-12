@@ -1,6 +1,9 @@
+acpid
+cpupower
+composite-run
+
 arch-install-scripts
 b43-fwcutter
-#broadcom-wl
 btrfs-progs
 clonezilla
 crda
@@ -25,7 +28,6 @@ hdparm
 ipw2100-fw
 ipw2200-fw
 irssi
-#lftp
 linux-atm
 lsscsi
 mc
@@ -33,7 +35,6 @@ mtools
 ndisc6
 nfs-utils
 nilfs-utils
-#nmap
 ntfs-3g
 ntp
 openconnect
@@ -66,13 +67,9 @@ xl2tpd
 lxdm
 lxdm-themes
 
-#xscreensaver
-#gnome-alsamixer
-#menulibre
 alacarte-xfce
 catfish
 tumbler
-#ristretto
 gpicview
 xfce4-lxsession-logout
 xfce4-sensors-plugin
@@ -82,8 +79,6 @@ xfce4-battery-plugin
 xfce4-notifyd
 xfce4-panel
 xfce4-power-manager
-#xfce4-pulseaudio-plugin
-#xfce4-screenshooter
 gnome-screenshot
 xfce4-session
 xfce4-settings
@@ -99,19 +94,16 @@ xfconf
 xfdesktop
 xfsprogs
 xfwm4
-#thunar
 thunar-extended
 thunar-archive-plugin-gtk2
 thunar-media-tags-plugin
 thunar-volman
 xdg-user-dirs
-#gksu
 polkit-gnome
 ttf-dejavu
 ttf-droid
 light-locker
 pamac-aur
-#xterm
 seahorse
 gnome-keyring
 file-roller
@@ -137,9 +129,6 @@ lib32-alsa-plugins
 
 faenza-icon-theme-fix
 xcursors-oxygen
-#arc-gtk-theme
-#arc-icon-theme
-#menda-themes-dark
 menda-themes
 zukitwo-themes
 
@@ -164,8 +153,8 @@ openal
 lib32-openal
 v4l-utils
 lib32-v4l-utils
-#libpulse
-#lib32-libpulse
+libpulse
+lib32-libpulse
 alsa-plugins
 lib32-alsa-plugins
 alsa-lib
@@ -204,7 +193,7 @@ xf86-video-intel
 xf86-video-nouveau
 xf86-video-openchrome
 xf86-video-vesa
-#xf86-video-vmware
+xf86-video-vmware
 xf86-video-amdgpu
 opencl-amd
 opencl-mesa
@@ -243,13 +232,11 @@ multilib-devel
 
 hardinfo
 quodlibet
-#chromium
 firefox
 firefox-i18n-ru
 libreoffice-still
 libreoffice-still-ru
 medit
-#leafpad
 mpv
 pinta 
 galculator-gtk2

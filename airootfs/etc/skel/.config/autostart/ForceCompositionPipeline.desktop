@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=NVIDIA\\ForceCompositionPipeline
+Comment=
+Exec=nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceCompositionPipeline = On }"
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=true
+Icon=/usr/share/pixmaps/nvidia-settings.png
